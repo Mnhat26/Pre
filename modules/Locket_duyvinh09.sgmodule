@@ -1,6 +1,6 @@
 #!url=https://cdn.jsdelivr.net/gh/Mnhat26/Pre@refs/heads/main/modules/Locket_duyvinh09.sgmodule
-#!name=Locket-DuyVinh09_Gold
-#!desc=Crack Full By DuyVinh09
+#!name=Locket Gold
+#!desc=Locket Gold
 
 [Script]
 revenuecat = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[^/]+$), script-path=https://cdn.jsdelivr.net/gh/Mnhat26/Pre@refs/heads/main/js/Locket_DuyVinh09.js, requires-body=true, max-size=-1, timeout=60
