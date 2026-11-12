@@ -50,21 +50,19 @@ if (ua.includes("Locket")) {
       tag_style: "gold_gradient",
       title: "Lên Locket Gold rồi đó 😎",
       feature_set: [{
-        title: "Nhớ follow kênh tiktok @duyvinh.09 ✨",
-        body: "Một follow của bạn, một niềm vui của mình 💛",
+        title: "Cho Mnhat xin 50k 💸",
+        body: "Một chút của bạn, một niềm vui của mình 💛",
         imageURL: "https://cdn.upanhlaylink.com/i/GSfYXmKd.png"
       }],
       primary_button_title: "Xong rồi nhé!",
-      campaign: "locket_gold_welcome_v3",
+      campaign: "locket_gold_welcome_mnhat",
       start_at: "2020-01-01T00:00:00",
-      end_at: "2099-12-31T23:59:59",
+      end_at: "2020-01-02T00:00:00",
       use_local_time_zone: true
     }),
     android_subscribe_gold_button_enabled: "false",
     profile_badge_visible: "true",
     lunar_new_year_app_icon_enabled: "true",
-    settings_instagram_url: "https://www.instagram.com/dvinh.09/",
-    settings_tiktok_url: "https://tiktok.com/@duyvinh.09",
     star_sign_caption_image_url: "https://storage.googleapis.com/locket-public/overlays/star_signs"
   });
   Object.assign(obj.entries, {
