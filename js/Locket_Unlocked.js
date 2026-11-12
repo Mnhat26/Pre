@@ -2,8 +2,6 @@
 // Locket Remote Config Rewrite
 // Endpoint: firebaseremoteconfig.googleapis.com
 // Dùng cho: Loon / Quantumult X / Surge / Shadowrocket
-// Tác giả: @duyvinh09
-// Vui lòng khi chia sẽ hoặc lấy về, làm ơn để nguồn giúp mình. Mình cảm ơn
 // ============================================================
 var ua = $request.headers["User-Agent"] || $request.headers["user-agent"] || "";
 var obj = JSON.parse($response.body);
@@ -50,12 +48,12 @@ if (ua.includes("Locket")) {
       tag_style: "gold_gradient",
       title: "Lên Locket Gold rồi đó 😎",
       feature_set: [{
-        title: "Cho Mnhat xin 50k 💸",
-        body: "Một chút của bạn, một niềm vui của mình 💛",
-        imageURL: "https://cdn.upanhlaylink.com/i/GSfYXmKd.png"
+        title: "Locket Gold",
+        body: "",
+        imageURL: ""
       }],
       primary_button_title: "Xong rồi nhé!",
-      campaign: "locket_gold_welcome_mnhat",
+      campaign: "locket_gold_welcome_off",
       start_at: "2020-01-01T00:00:00",
       end_at: "2020-01-02T00:00:00",
       use_local_time_zone: true
@@ -123,13 +121,12 @@ if (ua.includes("Locket")) {
       show_filter_button: true,
       sheet_enabled: true,
       open_sheet_immediately: true,
-      reference_image_attachment_enabled: true,
       sheet_filters: [{
         id: "group_hot_ai_3d",
         title: {
           en: "AI 3D Hot 🔥"
         },
-        filter_ids: ["fireworks", "harry_potter", "minecraft", "fire_flame", "giant_spider", "ocean_underwater", "ufo_alien", "sweat_hearts"]
+        filter_ids: ["fireworks", "harry_potter", "minecraft", "fire_flame", "giant_spider", "ocean_underwater", "ufo_alien", "sweat_hearts", "volcano_lava", "rain_storm", "fortnite_llama", "watercolor_art", "golden_hour"]
       }, {
         id: "group_photobooth",
         title: {
@@ -147,13 +144,13 @@ if (ua.includes("Locket")) {
         title: {
           en: "Hài hước"
         },
-        filter_ids: ["okay_wig", "influencer", "looks_maxxing", "toothless", "bye_brows"]
+        filter_ids: ["okay_wig", "influencer", "looks_maxxing", "toothless", "bye_brows", "spooky_ghost", "cute_zombie"]
       }, {
         id: "group_appearance",
         title: {
           en: "Ngoại hình"
         },
-        filter_ids: ["bowling_ball", "blonde_bleached", "beard", "bob_cut", "buns", "tatted", "mohawk", "braces", "bye_brows"]
+        filter_ids: ["bowling_ball", "blonde_bleached", "beard", "bob_cut", "buns", "tatted", "mohawk", "braces", "bye_brows", "rose_flower", "jungle_leaf"]
       }, {
         id: "group_event",
         title: {
@@ -171,7 +168,7 @@ if (ua.includes("Locket")) {
         title: {
           en: "Trang phục"
         },
-        filter_ids: ["wedding", "cowboy_cowgirl", "giraffe", "clown"]
+        filter_ids: ["wedding", "cowboy_cowgirl", "giraffe", "clown", "shrek_ogre", "superhero_cape", "pirate_hat"]
       }, {
         id: "group_holiday",
         title: {
@@ -184,7 +181,7 @@ if (ua.includes("Locket")) {
         title: {
           en: "AI 3D Hot 🔥"
         },
-        filter_ids: ["fireworks", "harry_potter", "minecraft", "fire_flame", "giant_spider", "ocean_underwater", "ufo_alien", "sweat_hearts"]
+        filter_ids: ["fireworks", "harry_potter", "minecraft", "fire_flame", "giant_spider", "ocean_underwater", "ufo_alien", "sweat_hearts", "volcano_lava", "rain_storm", "fortnite_llama", "watercolor_art", "golden_hour"]
       }, {
         id: "group_photobooth",
         title: {
@@ -202,13 +199,13 @@ if (ua.includes("Locket")) {
         title: {
           en: "Hài hước"
         },
-        filter_ids: ["okay_wig", "influencer", "looks_maxxing", "toothless", "bye_brows"]
+        filter_ids: ["okay_wig", "influencer", "looks_maxxing", "toothless", "bye_brows", "spooky_ghost", "cute_zombie"]
       }, {
         id: "group_appearance",
         title: {
           en: "Ngoại hình"
         },
-        filter_ids: ["bowling_ball", "blonde_bleached", "beard", "bob_cut", "buns", "tatted", "mohawk", "braces", "bye_brows"]
+        filter_ids: ["bowling_ball", "blonde_bleached", "beard", "bob_cut", "buns", "tatted", "mohawk", "braces", "bye_brows", "rose_flower", "jungle_leaf"]
       }, {
         id: "group_event",
         title: {
@@ -226,7 +223,7 @@ if (ua.includes("Locket")) {
         title: {
           en: "Trang phục"
         },
-        filter_ids: ["wedding", "cowboy_cowgirl", "giraffe", "clown"]
+        filter_ids: ["wedding", "cowboy_cowgirl", "giraffe", "clown", "shrek_ogre", "superhero_cape", "pirate_hat"]
       }, {
         id: "group_holiday",
         title: {
@@ -234,8 +231,308 @@ if (ua.includes("Locket")) {
         },
         filter_ids: ["easter_bunney_cutout", "easter_chick_cutout", "bearded", "leprechaun", "lucky_face", "sweet_hearts", "elf_cutout", "santa_cutout", "frosty"]
       }],
-      picker_filters: ["okay_wig", "influencer", "looks_maxxing", "toothless", "bye_brows", "bowling_ball", "blonde_bleached", "beard", "bob_cut", "buns", "tatted", "mohawk", "braces", "slimed", "princess", "disco_lights", "cash_money", "happy_birthday", "cutesy", "sticker_face", "flower_crown", "love_bug", "wedding", "cowboy_cowgirl", "giraffe", "clown", "easter_bunney_cutout", "easter_chick_cutout", "bearded", "leprechaun", "lucky_face", "sweet_hearts", "elf_cutout", "santa_cutout", "frosty", "frame_berry_days", "frame_happy_snap", "frame_sky_diary", "photobooth_4cut", "photobooth_cute", "pb_holo_4cut", "pb_scrapbook_ripped_4cut", "pb_ripped_paper_4cut", "pb_denim_ripped_2x2", "frame_classic_pb", "sticker_binh_luan_minh_tue", "cmt_locket", "khung_hello_kitty_pastel_ngot_ngao", "khung_hello_kitty_hong_pastel", "khung_pastel_vien_ren", "khung_hoa_pastel_vien_xanh_xinh", "khung_spiderred", "khung_khong_gian_xanh_pastel", "khung_ngoi_sao_hong_pastel", "khung_pastel_so_hai_cau", "khung_shin_chan", "khung_anh_hellokitty_v_sao", "khung_xanh_tay_sao_vang", "sinh_nhat_hello_kitty", "pb_single_y2k_silver_holo", "pb_single_denim_ripped", "pb_single_film_nostalgia", "locket", "fireworks", "harry_potter", "minecraft", "fire_flame", "giant_spider", "ocean_underwater", "ufo_alien", "sweat_hearts"],
+      picker_filters: ["okay_wig", "influencer", "looks_maxxing", "toothless", "bye_brows", "bowling_ball", "blonde_bleached", "beard", "bob_cut", "buns", "tatted", "mohawk", "braces", "slimed", "princess", "disco_lights", "cash_money", "happy_birthday", "cutesy", "sticker_face", "flower_crown", "love_bug", "wedding", "cowboy_cowgirl", "giraffe", "clown", "easter_bunney_cutout", "easter_chick_cutout", "bearded", "leprechaun", "lucky_face", "sweet_hearts", "elf_cutout", "santa_cutout", "frosty", "frame_berry_days", "frame_happy_snap", "frame_sky_diary", "photobooth_4cut", "photobooth_cute", "pb_holo_4cut", "pb_scrapbook_ripped_4cut", "pb_ripped_paper_4cut", "pb_denim_ripped_2x2", "frame_classic_pb", "sticker_binh_luan_minh_tue", "cmt_locket", "khung_hello_kitty_pastel_ngot_ngao", "khung_hello_kitty_hong_pastel", "khung_pastel_vien_ren", "khung_hoa_pastel_vien_xanh_xinh", "khung_spiderred", "khung_khong_gian_xanh_pastel", "khung_ngoi_sao_hong_pastel", "khung_pastel_so_hai_cau", "khung_shin_chan", "khung_anh_hellokitty_v_sao", "khung_xanh_tay_sao_vang", "sinh_nhat_hello_kitty", "pb_single_y2k_silver_holo", "pb_single_denim_ripped", "pb_single_film_nostalgia", "locket", "fireworks", "harry_potter", "minecraft", "fire_flame", "giant_spider", "ocean_underwater", "ufo_alien", "sweat_hearts", "rose_flower", "shrek_ogre", "superhero_cape", "spooky_ghost", "pirate_hat", "volcano_lava", "rain_storm", "fortnite_llama", "watercolor_art", "golden_hour", "jungle_leaf", "cute_zombie"],
       remote_filters: [{
+        uid: "rose_flower",
+        id: "rose_flower",
+        name: "Ngậm Hoa Hồng",
+        prompt: "Show the person in the photo with the exact same pose and background, but have them with a single rose in their mouth. If no person is present in the input, do not add anything to the output.",
+        productUrl: null,
+        colors: ["#E11D48", "#FB7185"],
+        captureButtonColors: ["#E11D48", "#FB7185"],
+        icon: {
+          url: "https://cdn.upanhlaylink.com/i/BK4BNlDb.png",
+          iconUrl: "https://cdn.upanhlaylink.com/i/BK4BNlDb.png",
+          remoteImage: "https://cdn.upanhlaylink.com/i/BK4BNlDb.png",
+          sfSymbol: "camera.macro",
+          emoji: ""
+        },
+        textColor: "#FFFFFF",
+        style: "cutout",
+        overlay: true,
+        overlayImageUrl: "https://cdn.upanhlaylink.com/i/BK4BNlDb.png",
+        overlayImageURL: "https://cdn.upanhlaylink.com/i/BK4BNlDb.png",
+        imageUrl: "https://cdn.upanhlaylink.com/i/BK4BNlDb.png",
+        iconUrl: "https://cdn.upanhlaylink.com/i/BK4BNlDb.png",
+        referenceImages: [],
+        type: "normal",
+        filterType: "normal"
+      }, {
+        uid: "shrek_ogre",
+        id: "shrek_ogre",
+        name: "Tai Ogre Shrek",
+        prompt: "Show the person in the photo with the exact same pose and background, but transform them into Shrek with rounded ears, and rustic clothing while preserving the pose. Keep their hairstyle, but make it look natural in the Shrek style.",
+        productUrl: null,
+        colors: ["#84CC16", "#65A30D"],
+        captureButtonColors: ["#84CC16", "#65A30D"],
+        icon: {
+          url: "https://cdn.upanhlaylink.com/i/A7XjgjXm.png",
+          iconUrl: "https://cdn.upanhlaylink.com/i/A7XjgjXm.png",
+          remoteImage: "https://cdn.upanhlaylink.com/i/A7XjgjXm.png",
+          sfSymbol: "ear",
+          emoji: ""
+        },
+        textColor: "#FFFFFF",
+        style: "cutout",
+        overlay: true,
+        overlayImageUrl: "https://cdn.upanhlaylink.com/i/A7XjgjXm.png",
+        overlayImageURL: "https://cdn.upanhlaylink.com/i/A7XjgjXm.png",
+        imageUrl: "https://cdn.upanhlaylink.com/i/A7XjgjXm.png",
+        iconUrl: "https://cdn.upanhlaylink.com/i/A7XjgjXm.png",
+        referenceImages: [],
+        type: "normal",
+        filterType: "normal"
+      }, {
+        uid: "superhero_cape",
+        id: "superhero_cape",
+        name: "Siêu Anh Hùng",
+        prompt: "Show the person in the photo with the exact same pose and background, but suit them up like a superhero in a blue and red outfit with a flowing cape while keeping their pose and framing identical.",
+        productUrl: null,
+        colors: ["#DC2626", "#FBBF24"],
+        captureButtonColors: ["#DC2626", "#FBBF24"],
+        icon: {
+          url: "https://cdn.upanhlaylink.com/i/RAOMbtpc.png",
+          iconUrl: "https://cdn.upanhlaylink.com/i/RAOMbtpc.png",
+          remoteImage: "https://cdn.upanhlaylink.com/i/RAOMbtpc.png",
+          sfSymbol: "shield.fill",
+          emoji: ""
+        },
+        textColor: "#FFFFFF",
+        style: "cutout",
+        overlay: true,
+        overlayImageUrl: "https://cdn.upanhlaylink.com/i/RAOMbtpc.png",
+        overlayImageURL: "https://cdn.upanhlaylink.com/i/RAOMbtpc.png",
+        imageUrl: "https://cdn.upanhlaylink.com/i/RAOMbtpc.png",
+        iconUrl: "https://cdn.upanhlaylink.com/i/RAOMbtpc.png",
+        referenceImages: [],
+        type: "normal",
+        filterType: "normal"
+      }, {
+        uid: "spooky_ghost",
+        id: "spooky_ghost",
+        name: "Bóng Ma Nhỏ",
+        prompt: "Show the person in the photo with the exact same pose, expression, and background, but subtly insert a realistic-looking ghost somewhere in the background. If no person is present, do not add any people to the output.",
+        productUrl: null,
+        colors: ["#38BDF8", "#818CF8"],
+        captureButtonColors: ["#38BDF8", "#818CF8"],
+        icon: {
+          url: "https://cdn.upanhlaylink.com/i/v6H7SoQw.png",
+          iconUrl: "https://cdn.upanhlaylink.com/i/v6H7SoQw.png",
+          remoteImage: "https://cdn.upanhlaylink.com/i/v6H7SoQw.png",
+          sfSymbol: "moon.stars.fill",
+          emoji: ""
+        },
+        textColor: "#FFFFFF",
+        style: "cutout",
+        overlay: true,
+        overlayImageUrl: "https://cdn.upanhlaylink.com/i/v6H7SoQw.png",
+        overlayImageURL: "https://cdn.upanhlaylink.com/i/v6H7SoQw.png",
+        imageUrl: "https://cdn.upanhlaylink.com/i/v6H7SoQw.png",
+        iconUrl: "https://cdn.upanhlaylink.com/i/v6H7SoQw.png",
+        referenceImages: [],
+        type: "normal",
+        filterType: "normal"
+      }, {
+        uid: "pirate_hat",
+        id: "pirate_hat",
+        name: "Mũ Cướp Biển",
+        prompt: "Show the person in the photo with the exact same pose and background, but dress them like a pirate from Pirates of the Caribbean while keeping their pose and facial expression identical.",
+        productUrl: null,
+        colors: ["#0F172A", "#E2E8F0"],
+        captureButtonColors: ["#0F172A", "#E2E8F0"],
+        icon: {
+          url: "https://cdn.upanhlaylink.com/i/DgoIoU3M.png",
+          iconUrl: "https://cdn.upanhlaylink.com/i/DgoIoU3M.png",
+          remoteImage: "https://cdn.upanhlaylink.com/i/DgoIoU3M.png",
+          sfSymbol: "flag.fill",
+          emoji: ""
+        },
+        textColor: "#FFFFFF",
+        style: "cutout",
+        overlay: true,
+        overlayImageUrl: "https://cdn.upanhlaylink.com/i/DgoIoU3M.png",
+        overlayImageURL: "https://cdn.upanhlaylink.com/i/DgoIoU3M.png",
+        imageUrl: "https://cdn.upanhlaylink.com/i/DgoIoU3M.png",
+        iconUrl: "https://cdn.upanhlaylink.com/i/DgoIoU3M.png",
+        referenceImages: [],
+        type: "normal",
+        filterType: "normal"
+      }, {
+        uid: "volcano_lava",
+        id: "volcano_lava",
+        name: "Núi Lửa Dung Nham",
+        prompt: "Show the person in the photo with the exact same pose, background, and facial expression, but replace the ground with molten lava, glowing magma cracks, and volcanic sparks while keeping them rooted to the spot. If no face is present, do not show any people in the output, only ever show people who were in the original input image.",
+        productUrl: null,
+        colors: ["#EA580C", "#EF4444"],
+        captureButtonColors: ["#EA580C", "#EF4444"],
+        icon: {
+          url: "https://cdn.upanhlaylink.com/i/q4nXD6Jo.png",
+          iconUrl: "https://cdn.upanhlaylink.com/i/q4nXD6Jo.png",
+          remoteImage: "https://cdn.upanhlaylink.com/i/q4nXD6Jo.png",
+          sfSymbol: "flame.fill",
+          emoji: ""
+        },
+        textColor: "#FFFFFF",
+        style: "cutout",
+        overlay: true,
+        overlayImageUrl: "https://cdn.upanhlaylink.com/i/q4nXD6Jo.png",
+        overlayImageURL: "https://cdn.upanhlaylink.com/i/q4nXD6Jo.png",
+        imageUrl: "https://cdn.upanhlaylink.com/i/q4nXD6Jo.png",
+        iconUrl: "https://cdn.upanhlaylink.com/i/q4nXD6Jo.png",
+        referenceImages: [],
+        type: "normal",
+        filterType: "normal"
+      }, {
+        uid: "rain_storm",
+        id: "rain_storm",
+        name: "Mưa Bão Sấm Sét",
+        prompt: "Retain the exact pose, facial features, distance, and background from the original image. Dress the subject as a character from the Wuthering Heights movie.\n\nFor Men: Dress them in the Jacob Elordi style with matching hair and outfit.\n\nFor Women: Dress them in the Margot Robbie style: A dramatic, historical-inspired red gown with a high-gloss, lacquered red skirt that is extremely voluminous and structured, forming a full bell shape from the waist down if that part is visible in the initial image. The skirt looks stiff and reflective, almost like polished vinyl. The bodice is corset-style, fitted tightly to the torso in the same glossy red material, with thin shoulder straps, a wide scoop rounded neckline, and the dress cinching the waist and creating a structured, corset-inspired silhouette WITHOUT visible boning, lacing or busks, and featuring a sheer billowing white long puffed sleeve shirt worn underneath with a scooped neckline for the white undershirt peeking out from behind the dress.\n\nConstraints: Do not modify the person's physical features, body shape, or positioning. Keep the framing and background 100% unchanged. If no person is present, return the image unaltered. Do not include Jacob Elordi or Margot Robbie themselves in the output image.",
+        productUrl: null,
+        colors: ["#3B82F6", "#6366F1"],
+        captureButtonColors: ["#3B82F6", "#6366F1"],
+        icon: {
+          url: "https://cdn.upanhlaylink.com/i/kY7CANZp.png",
+          iconUrl: "https://cdn.upanhlaylink.com/i/kY7CANZp.png",
+          remoteImage: "https://cdn.upanhlaylink.com/i/kY7CANZp.png",
+          sfSymbol: "cloud.bolt.rain.fill",
+          emoji: ""
+        },
+        textColor: "#FFFFFF",
+        style: "cutout",
+        overlay: true,
+        overlayImageUrl: "https://cdn.upanhlaylink.com/i/kY7CANZp.png",
+        overlayImageURL: "https://cdn.upanhlaylink.com/i/kY7CANZp.png",
+        imageUrl: "https://cdn.upanhlaylink.com/i/kY7CANZp.png",
+        iconUrl: "https://cdn.upanhlaylink.com/i/kY7CANZp.png",
+        referenceImages: [],
+        type: "normal",
+        filterType: "normal"
+      }, {
+        uid: "fortnite_llama",
+        id: "fortnite_llama",
+        name: "Llama Fortnite",
+        prompt: "Show the person in the photo with the exact same pose, expression, and background, but make the entire scene look like it was rendered inside a video game, similar to the style of Fortnite. Show no extra overlays or text on top of the photo. If no person is present, do not add any people to the output.",
+        productUrl: null,
+        colors: ["#A855F7", "#EC4899"],
+        captureButtonColors: ["#A855F7", "#EC4899"],
+        icon: {
+          url: "https://cdn.upanhlaylink.com/i/Mw2lEyZa.png",
+          iconUrl: "https://cdn.upanhlaylink.com/i/Mw2lEyZa.png",
+          remoteImage: "https://cdn.upanhlaylink.com/i/Mw2lEyZa.png",
+          sfSymbol: "gamecontroller.fill",
+          emoji: ""
+        },
+        textColor: "#FFFFFF",
+        style: "cutout",
+        overlay: true,
+        overlayImageUrl: "https://cdn.upanhlaylink.com/i/Mw2lEyZa.png",
+        overlayImageURL: "https://cdn.upanhlaylink.com/i/Mw2lEyZa.png",
+        imageUrl: "https://cdn.upanhlaylink.com/i/Mw2lEyZa.png",
+        iconUrl: "https://cdn.upanhlaylink.com/i/Mw2lEyZa.png",
+        referenceImages: [],
+        type: "normal",
+        filterType: "normal"
+      }, {
+        uid: "watercolor_art",
+        id: "watercolor_art",
+        name: "Tranh Màu Nước",
+        prompt: "Show the person in the photo with the exact same pose, expression, and background, but render the entire scene as a watercolor painting with flowing brush strokes. If no person is present, do not add any people to the output.",
+        productUrl: null,
+        colors: ["#06B6D4", "#F43F5E"],
+        captureButtonColors: ["#06B6D4", "#F43F5E"],
+        icon: {
+          url: "https://cdn.upanhlaylink.com/i/YatSePfJ.png",
+          iconUrl: "https://cdn.upanhlaylink.com/i/YatSePfJ.png",
+          remoteImage: "https://cdn.upanhlaylink.com/i/YatSePfJ.png",
+          sfSymbol: "paintpalette.fill",
+          emoji: ""
+        },
+        textColor: "#FFFFFF",
+        style: "cutout",
+        overlay: true,
+        overlayImageUrl: "https://cdn.upanhlaylink.com/i/YatSePfJ.png",
+        overlayImageURL: "https://cdn.upanhlaylink.com/i/YatSePfJ.png",
+        imageUrl: "https://cdn.upanhlaylink.com/i/YatSePfJ.png",
+        iconUrl: "https://cdn.upanhlaylink.com/i/YatSePfJ.png",
+        referenceImages: [],
+        type: "normal",
+        filterType: "normal"
+      }, {
+        uid: "golden_hour",
+        id: "golden_hour",
+        name: "Nắng Hoàng Hôn",
+        prompt: "Show the person in the photo with the exact same pose, expression, and background, but make the scene look like it was captured during peak golden hour with warm sunlight and long shadows. If no person is present, do not add any people to the output.",
+        productUrl: null,
+        colors: ["#F59E0B", "#F97316"],
+        captureButtonColors: ["#F59E0B", "#F97316"],
+        icon: {
+          url: "https://cdn.upanhlaylink.com/i/Kl3WF7kN.png",
+          iconUrl: "https://cdn.upanhlaylink.com/i/Kl3WF7kN.png",
+          remoteImage: "https://cdn.upanhlaylink.com/i/Kl3WF7kN.png",
+          sfSymbol: "sun.max.fill",
+          emoji: ""
+        },
+        textColor: "#FFFFFF",
+        style: "cutout",
+        overlay: true,
+        overlayImageUrl: "https://cdn.upanhlaylink.com/i/Kl3WF7kN.png",
+        overlayImageURL: "https://cdn.upanhlaylink.com/i/Kl3WF7kN.png",
+        imageUrl: "https://cdn.upanhlaylink.com/i/Kl3WF7kN.png",
+        iconUrl: "https://cdn.upanhlaylink.com/i/Kl3WF7kN.png",
+        referenceImages: [],
+        type: "normal",
+        filterType: "normal"
+      }, {
+        uid: "jungle_leaf",
+        id: "jungle_leaf",
+        name: "Rừng Nhiệt Đới",
+        prompt: "Show the person in the photo with the exact same pose, background, and facial expression, but with their background surroundings overgrown with plants in a seamless way. The person and their background should remain in the same positions. If no face is present, do not show any people in the output, only ever show people who were in the original input image.",
+        productUrl: null,
+        colors: ["#16A34A", "#15803D"],
+        captureButtonColors: ["#16A34A", "#15803D"],
+        icon: {
+          url: "https://cdn.upanhlaylink.com/i/Ca6bMpOL.png",
+          iconUrl: "https://cdn.upanhlaylink.com/i/Ca6bMpOL.png",
+          remoteImage: "https://cdn.upanhlaylink.com/i/Ca6bMpOL.png",
+          sfSymbol: "leaf.fill",
+          emoji: ""
+        },
+        textColor: "#FFFFFF",
+        style: "cutout",
+        overlay: true,
+        overlayImageUrl: "https://cdn.upanhlaylink.com/i/Ca6bMpOL.png",
+        overlayImageURL: "https://cdn.upanhlaylink.com/i/Ca6bMpOL.png",
+        imageUrl: "https://cdn.upanhlaylink.com/i/Ca6bMpOL.png",
+        iconUrl: "https://cdn.upanhlaylink.com/i/Ca6bMpOL.png",
+        referenceImages: [],
+        type: "normal",
+        filterType: "normal"
+      }, {
+        uid: "cute_zombie",
+        id: "cute_zombie",
+        name: "Zombie Chibi",
+        prompt: "Show the person in the photo with the exact same pose and background, but turn them into a zombie while keeping their pose and expression identical.",
+        productUrl: null,
+        colors: ["#10B981", "#8B5CF6"],
+        captureButtonColors: ["#10B981", "#8B5CF6"],
+        icon: {
+          url: "https://cdn.upanhlaylink.com/i/aAvLUQ2t.png",
+          iconUrl: "https://cdn.upanhlaylink.com/i/aAvLUQ2t.png",
+          remoteImage: "https://cdn.upanhlaylink.com/i/aAvLUQ2t.png",
+          sfSymbol: "person.fill",
+          emoji: ""
+        },
+        textColor: "#FFFFFF",
+        style: "cutout",
+        overlay: true,
+        overlayImageUrl: "https://cdn.upanhlaylink.com/i/aAvLUQ2t.png",
+        overlayImageURL: "https://cdn.upanhlaylink.com/i/aAvLUQ2t.png",
+        imageUrl: "https://cdn.upanhlaylink.com/i/aAvLUQ2t.png",
+        iconUrl: "https://cdn.upanhlaylink.com/i/aAvLUQ2t.png",
+        referenceImages: [],
+        type: "normal",
+        filterType: "normal"
+      }, {
         uid: "fireworks",
         id: "fireworks",
         name: "Pháo Hoa Rực Rỡ",
@@ -1364,7 +1661,7 @@ if (ua.includes("Locket")) {
     streak.minimum_recovery_count = 0;
     streak.minimum_display_count = 0;
     obj.entries.streak_config = JSON.stringify(streak);
-  } catch (_0x341330) {}
+  } catch (_0x394bec) {}
   Object.assign(obj.entries, {
     daily_reminder_config: JSON.stringify({
       is_time_sensitive: true,
@@ -1534,7 +1831,6 @@ if (ua.includes("Locket")) {
       "firebasestorage.googleapis.com": "cdn.locketcamera.com"
     }),
     cdn_domain_replacements_video: "true",
-    functions_domains: JSON.stringify(["https://api.locketcamera.com", "https://us-central1-locket-4252a.cloudfunctions.net"]),
     storage_bucket: "gs://locket-img",
     storage_bucket_video: "gs://locket-video",
     camera_filter_storage_bucket: "gs://locket-filters",
@@ -2075,162 +2371,6 @@ if (ua.includes("Locket")) {
           max_lines: 1,
           text: "OOTD",
           text_color: "#101010E6",
-          type: "static_content"
-        }
-      }, {
-        overlay_id: "caption:cu",
-        source: "remote",
-        caption: {
-          background: {
-            colors: ["#FFD6A5", "#FFF1A8", "#FFC4D6"]
-          },
-          max_lines: 1,
-          text: "Cu 🐎",
-          text_color: "#633B24",
-          type: "static_content"
-        }
-      }, {
-        overlay_id: "caption:tuat",
-        source: "remote",
-        caption: {
-          background: {
-            colors: ["#2C1A0E", "#5D4037", "#D7A86E"]
-          },
-          icon: {
-            data: "🐕",
-            type: "emoji"
-          },
-          max_lines: 1,
-          text: "Tuất",
-          text_color: "#FFFFFFE6",
-          type: "static_content"
-        }
-      }, {
-        overlay_id: "caption:snake_vibes",
-        source: "remote",
-        caption: {
-          background: {
-            colors: ["#2E7D32", "#66BB6A"]
-          },
-          icon: {
-            data: "🐍",
-            type: "emoji"
-          },
-          max_lines: 1,
-          text: "Snake Vibes",
-          localized_text: {
-            en: "Snake Vibes",
-            vn: "Chất rắn"
-          },
-          text_color: "#FFFFFFE6",
-          type: "static_content"
-        }
-      }, {
-        overlay_id: "caption:du_an_ma",
-        source: "remote",
-        caption: {
-          background: {
-            colors: ["#263238", "#455A64"]
-          },
-          icon: {
-            data: "👻",
-            type: "emoji"
-          },
-          max_lines: 1,
-          text: "dự án ma",
-          text_color: "#FFFFFFE6",
-          type: "static_content"
-        }
-      }, {
-        overlay_id: "caption:love_vietnam",
-        source: "remote",
-        alt_text: "Tôi yêu Việt Nam",
-        caption: {
-          background: {
-            image: {
-              type: "image",
-              data: "star_sign_background",
-              source: "local"
-            },
-            colors: ["#DA251D", "#DA251D"]
-          },
-          icon: {
-            type: "image",
-            data: "https://storage.googleapis.com/locket-public/journal_calendar_assets/holiday_indicators/valentines_indicator%403x.png",
-            source: "url"
-          },
-          max_lines: 1,
-          text: "Tôi yêu Việt Nam",
-          text_color: "#FFFF00",
-          type: "static_content"
-        }
-      }, {
-        overlay_id: "caption:film_diary",
-        source: "remote",
-        alt_text: "Một ngày rất chill",
-        caption: {
-          background: {
-            image: {
-              type: "image",
-              data: "https://public.locketcamera.com/locket-public/gold_promos/gold_promo_camera_roll.png",
-              source: "url"
-            },
-            colors: ["#D2B48C", "#8B4513"]
-          },
-          icon: {
-            type: "image",
-            data: "https://public.locketcamera.com/locket-public/journal_calendar_assets/holiday_indicators/st_patricks_indicator%403x.png",
-            source: "url"
-          },
-          max_lines: 1,
-          text: "Một ngày rất chill",
-          text_color: "#FFFDD0",
-          type: "static_content"
-        }
-      }, {
-        overlay_id: "caption:strangers",
-        source: "remote",
-        alt_text: "Người lạ",
-        caption: {
-          background: {
-            image: {
-              type: "image",
-              data: "https://public.locketcamera.com/locket-public/gold_promos/gold_promo_views.png",
-              source: "url"
-            },
-            colors: ["#1C1C1E", "#2C2C2E"]
-          },
-          icon: {
-            data: "eye.fill",
-            type: "sf_symbol",
-            color: "#0A84FF"
-          },
-          max_lines: 1,
-          text: "Người lạ",
-          text_color: "#FFFFFF",
-          type: "static_content"
-        }
-      }, {
-        overlay_id: "caption:genz_flex",
-        source: "remote",
-        alt_text: "Mood: Chill",
-        caption: {
-          background: {
-            image: {
-              type: "image",
-              data: "https://public.locketcamera.com/locket-public/gold_promos/gold_promo_widgets.png",
-              source: "url"
-            },
-            colors: ["#FF9A9E", "#FECFEF"]
-          },
-          icon: {
-            data: "camera.fill",
-            type: "sf_symbol",
-            color: "#FF007F"
-          },
-          max_lines: 1,
-          text: "Mood: Chill 💅",
-          text_color: "#FFFFFF",
           type: "static_content"
         }
       }]
