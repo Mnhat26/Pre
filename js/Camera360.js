@@ -6,7 +6,6 @@ Links: https://apps.apple.com/us/app/camera360-selfie-editor/id443354861
 **************************************
 
 [rewrite_local]
-^https?:\/\/.*\.camera360\.com\/(api\/(order\/purchase|iap\/check-receipt)|v\d\/operational-positions) url script-response-body https://gitlab.com/duyvinh09/ohb/-/raw/main/Script/camera360.js
 
 [mitm]
 hostname = *.camera360.com
